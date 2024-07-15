@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv='Content-Type' content='text/html;charset=utf-8'>
+<link rel='icon' type='image/png' href='../shared/cg.png'>
+<title>Rotating square</title>
+<style type = 'text/css'>
+    h1 {
+        font-family: 'Roboto', sans-serif;
+    }
+</style>
+<script type='text/javascript' src='../shared/graphics.js'></script>
+<script type='text/javascript' src='./rotating-square.js'></script>
+</head>
+
+<body>
+<h1>Rotating square</h1>
+
+<div>
+    <!-- triggers set_speed() callback function -->
+    <select id='select-speed' onchange='set_speed(this)'>
+        <option value='pause'>Pause</option>
+        <option value='slow'>Slow</option>
+        <option value='medium'>Medium</option>
+        <option value='fast'>Fast</option>
+
+
+
+    </select>
+</div>
+
+<div>
+    <canvas id='gl-canvas' width='768' height='768'>
+        Error: browser doesn't support HTML5 canvas
+    </canvas>
+</div>
+
+<button type='button' id='capture-button'>Capture image</button> 
+
+</body>
+</html>
+

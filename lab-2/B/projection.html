@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- ECS610U Miles Hansard -->
+
+<html>
+<head>
+<meta http-equiv='Content-Type' content='text/html;charset=utf-8'>
+<link rel='icon' type='image/png' href='../shared/cg.png'>
+<title>ECS610U Computer graphics</title>
+
+<style type = 'text/css'>
+    h1 {
+        font-family: 'Roboto', sans-serif;
+        color: #303030;
+    }
+    canvas {
+        border: 2px solid white;
+    }   
+</style>
+<script type='text/javascript' src='../shared/graphics.js'></script>
+<script type='text/javascript' src='./projection.js'></script>
+</head>
+
+<body>
+<h1>ECS610U Computer graphics &mdash; Projection &amp; clipping demo</h1>
+
+<div>
+    <canvas id='canvas' width='600' height='600'>
+        Error: HTML5 canvas not supported
+    </canvas>
+    &nbsp; &nbsp;
+    <div style='display:inline-block;vertical-align:top;'>
+        <canvas id='gl-canvas' width='600' height='600'>
+            Error: HTML5 canvas not supported
+        </canvas><br>
+        <button type='button' id='capture-button'>Capture WebGL</button>
+    </div>
+</div>
+
+</body>
+</html>
+

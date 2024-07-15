@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- ECS610U Miles Hansard -->
+
+<html>
+<head>
+<meta http-equiv='Content-Type' content='text/html;charset=utf-8' >
+<link rel='icon' type='image/png' href='../shared/cg.png'>
+<title>ECS610U Computer graphics</title>
+
+<style type = 'text/css'>
+    h1, div {
+        font-family: 'Roboto', sans-serif;
+    }
+    tt {
+        font-family: 'Courier New';
+        font-size: 20px;
+    }
+    canvas {
+    }   
+</style>
+<script type='text/javascript' src='../shared/webgl-obj-loader.js'></script>
+<script type='text/javascript' src='../shared/graphics.js'></script>
+<script type='text/javascript' src='./environment.js'></script>
+</head>
+
+<body>
+<h1>ECS610U Computer graphics &mdash; Textures &amp; environments demo</h1>
+
+<div>
+    <canvas id='gl-canvas' width='850' height='850'>
+    Error: HTML5 canvas not supported
+    </canvas><br>
+    <button type='button' id='capture-button'>Capture WebGL</button>
+    &nbsp; &nbsp; &nbsp; 
+    Move object XY: &nbsp; &#9665; &nbsp; &#9655; &nbsp; &#9661; &#9651; &nbsp; &nbsp; &nbsp; &nbsp; 
+    Move object Z: <tt>shift</tt> &#9661; &#9651; &nbsp; &nbsp; &nbsp; &nbsp; 
+    Scale object: <tt>shift</tt> &#9665; &nbsp; &#9655; &nbsp; &nbsp; &nbsp; &nbsp; 
+    Rotate object on/off: <tt>r</tt>
+</div> <br><br>
+
+<img id ='cubemap_img0' src='../shared/models/chessboard/right.png' hidden></img>
+<img id ='cubemap_img1' src='../shared/models/chessboard/left.png' hidden></img>
+<img id ='cubemap_img2' src='../shared/models/chessboard/over.png' hidden></img>
+<img id ='cubemap_img3' src='../shared/models/chessboard/under.png' hidden></img>
+<img id ='cubemap_img4' src='../shared/models/chessboard/front.png' hidden></img>
+<img id ='cubemap_img5' src='../shared/models/chessboard/back.png' hidden></img>
+
+</body>
+</html>
+
